@@ -1,0 +1,426 @@
+/* main section.................... */
+@media only screen and (max-width: 600px) {
+    header {
+        height: 60px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+    }
+    .left-nav img {
+        width: 50px;
+    }
+    .center-nav {
+        /* flex-direction: column; */
+        display: none;
+    }
+    .center-nav li {
+        padding: 8px 10px;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    .right-nav{
+        display: none;
+    }
+    .right-nav img {
+        width: 50px;
+    }
+    .right-nav .search-bar input {
+        width: 100%;
+        padding: 8px;
+    }
+    .hidden-1 {
+        top: 60px;
+    }
+    .destination-left {
+        width: 100%;
+    }
+    .destination-right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 70px;
+    }
+    nav {
+        padding: 0 10px;
+    }
+    .left-nav img {
+        width: 60px;
+    }
+    .center-nav li {
+        padding: 10px 15px;
+    }
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+    .right-nav img {
+        width: 60px;
+    }
+    .right-nav .search-bar input {
+        padding: 8px;
+    }
+    .hidden-1 {
+        top: 70px;
+    }
+    .destination-left {
+        width: 40%;
+    }
+    .destination-right {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 80px;
+    }
+    nav {
+        padding: 0 20px;
+    }
+    .left-nav img {
+        width: 80px;
+    }
+    .center-nav li {
+        padding: 10px 20px;
+    }
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    .right-nav img {
+        width: 70px;
+    }
+    .right-nav .search-bar input {
+        padding: 10px;
+    }
+    .hidden-1 {
+        top: 80px;
+    }
+    .destination-left {
+        width: 30%;
+    }
+    .destination-right {
+        width: 70%;
+    }
+}
+/* page2...................... */
+@media only screen and (max-width: 600px) {
+    .package-deal h2 {
+        font-size: 1.8rem;
+    }
+    .card-container {
+        flex-direction: column;
+        overflow-x: visible;
+    }
+    .card {
+        min-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .card img {
+        height: 50%;
+    }
+    .card-content h3 {
+        font-size: 1rem;
+    }
+    .card-content p {
+        font-size: 0.8rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+}
+
+/* @media only screen and (max-width: 768px) {
+    .package-deal h2 {
+        font-size: 2.2rem;
+    }
+    .card-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card {
+        min-width: 45%;
+        height: 350px;
+        margin-right: 15px;
+    }
+    .card img {
+        height: 55%;
+    }
+    .card-content h3 {
+        font-size: 1.1rem;
+    }
+    .card-content p {
+        font-size: 0.85rem;
+    }
+    .price {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .package-deal h2 {
+        font-size: 2.5rem;
+    }
+    .card-container {
+        display: flex;
+    }
+    .card {
+        min-width: 250px;
+        height: 400px;
+    }
+    .card img {
+        height: 60%;
+    }
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+    .card-content p {
+        font-size: 0.9rem;
+    }
+    .price {
+        font-size: 1.4rem;
+    }
+} */
+
+
+
+
+/* page-3 and page4 .................. */
+
+@media only screen and (max-width: 600px) {
+    .getvisa-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .getvisa-container h2 {
+        font-size: 2rem;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .getvisa-container img {
+        width: 100vw;
+        margin: 20px 70px;
+        height: 50vh;
+    }
+    .getvisa-container .btn {
+        margin: 0px 55px;
+    }
+    .page-4 {
+        padding: 20px;
+        min-height: 50vh;
+    }
+    .contact-content h2 {
+        font-size: 2rem;
+    }
+    .contact-content p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .getvisa-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .getvisa-container h2 {
+        font-size: 2.5rem;
+        margin: 40px 0;
+    }
+    .getvisa-container img {
+        width: 60%;
+        margin-top: 30px;
+    }
+    .page-4 {
+        padding: 30px;
+    }
+    .contact-content h2 {
+        font-size: 2.5rem;
+    }
+    .contact-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .getvisa-container {
+        flex-direction: row;
+    }
+    .getvisa-container h2 {
+        font-size: 3rem;
+        margin: 80px 0 15px 30px;
+    }
+    .getvisa-container img {
+        width: 50%;
+    }
+    .page-4 {
+        padding: 40px;
+        min-height: 50vh;
+    }
+    .contact-content h2 {
+        font-size: 3rem;
+    }
+    .contact-content p {
+        font-size: 1.2rem;
+    }
+}
+/* page4 and page 5 */
+
+@media only screen and (max-width: 600px) {
+    /* Page 5 - Know More Section */
+    .know-more-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .know-more-card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .know-more-card img {
+        width: 100%;
+        height: auto;
+    }
+    .page-5 h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* Page 6 - Slider Section */
+    .page-6 h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .slideshow-container {
+        width: 100%;
+    }
+    .mySlides img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Page 5 - Know More Section */
+    .know-more-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .know-more-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .know-more-card img {
+        width: 100%;
+        height: auto;
+    }
+    .page-5 h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Page 6 - Slider Section */
+    .page-6 h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .slideshow-container {
+        width: 90%;
+    }
+    .mySlides img {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Page 5 - Know More Section */
+    .know-more-container {
+        justify-content: space-between;
+    }
+    .know-more-card {
+        width: 300px;
+        height: 400px;
+    }
+    .know-more-card img {
+        width: 280px;
+        height: 300px;
+    }
+    .page-5 h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Page 6 - Slider Section */
+    .page-6 h2 {
+        font-size: 2.5rem;
+    }
+    .slideshow-container {
+        width: 1000px;
+    }
+    .mySlides img {
+        height: 400px;
+    }
+}
+/* footer.................... */
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 20px;
+    }
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-about, .footer-links, .footer-social {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .footer-social ul {
+        justify-content: center;
+    }
+    .footer-links ul li, .footer-social ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        width: 90%;
+    }
+    .footer-about, .footer-links, .footer-social {
+        margin: 20px 0;
+    }
+    .footer-social ul {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer-sections {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 1200px;
+    }
+    .footer-about, .footer-links, .footer-social {
+        margin: 0 15px;
+    }
+    .footer-about p, .footer-links ul, .footer-social ul {
+        margin: 20px 0;
+    }
+}

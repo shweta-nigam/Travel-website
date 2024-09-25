@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>
+    /* Basic styles for the navigation */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  /* color: white; */
+  padding: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #444;
+}
+
+/* Hidden page container */
+.hidden-page {
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 50vh;
+  background-color: #f7f7f7;
+  display: flex;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Showing the hidden page when hovering on Destinations in navbar */
+#nav-destinations:hover + .hidden-page,
+.hidden-page:hover {
+  display: flex;
+}
+
+/* Style for left side (Destination names) */
+.destination-left {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.destination-left ul {
+  margin: 0;
+  padding: 0;
+}
+
+.destination-item {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.destination-item:hover {
+  background-color: #eee;
+}
+
+/* Style for right side (Images) */
+.destination-right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.destination-right img {
+  max-width: 90%;
+  max-height: 90%;
+  display: none;
+}
+
+/* Smooth transition effect for images */
+.destination-right img.fade-in {
+  display: block;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Keyframes for image fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+   </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li class="nav-item">Home</li>
+      <li class="nav-item" id="nav-destinations">Destinations</li>
+    </ul>
+  </nav>
+
+  <!-- Hidden Page Section -->
+  <div class="hidden-page" id="destinations">
+    <div class="destination-left">
+      <ul>
+        <li class="destination-item" data-img="image1.jpg">Riyadh</li>
+        <li class="destination-item" data-img="src/con-pic2.jpg">Jeddah</li>
+        <li class="destination-item" data-img="src/con-pic.jpg">Mecca</li>
+        <li class="destination-item" data-img="src/con-pic2.jpg">Medina</li>
+        <li class="destination-item" data-img="src/con-pic2.jpg">Abha</li>
+        <li class="destination-item" data-img="src/con-pic2.jpg">Taif</li>
+        <li class="destination-item" data-img="image7.jpg">Dammam</li>
+        <li class="destination-item" data-img="image8.jpg">Al Khobar</li>
+      </ul>
+    </div>
+    <div class="destination-right">
+      <img id="destination-img" src="src/image1.jpg" alt="Destination Image">
+    </div>
+  </div>
+
+  <script>const destinationItems = document.querySelectorAll('.destination-item');
+    const destinationImg = document.getElementById('destination-img');
+    
+    destinationItems.forEach(item => {
+      item.addEventListener('mouseover', function() {
+        const imgSrc = item.getAttribute('data-img');
+        destinationImg.src = imgSrc;
+        destinationImg.classList.add('fade-in');
+      });
+    
+      item.addEventListener('mouseout', function() {
+        destinationImg.classList.remove('fade-in');
+        destinationImg.src = '';
+      });
+    });
+    </script>
+</body>
+</html>
+

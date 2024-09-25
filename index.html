@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <main>
+        <div class="main-video-background">
+            <video autoplay muted loop>
+                <source src="src/vid2.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <header>
+                <nav>
+                    <div class="left-nav"><img src="src/logo1.png" alt="logo"></div>
+                    <ul class="center-nav">
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#destinations" id="nav-destinations">Destinations</a></li>
+
+                        <li><a href="http://127.0.0.1:3000/12_Travelling Website(15-09-2024)/contact.html">Contact
+                                Us</a></li>
+                        <li><a href="#plan-trip">Plan Your Trip</a></li>
+                    </ul>
+                    <div class="right-nav">
+                        <div class="search-bar">
+                            <form>
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search...">
+                            </form>
+                        </div>
+                        <div><img src="src/earthpic2.webp" alt="Earth pic"></div>
+                    </div>
+                </nav>
+            </header>
+            <section class="hero-section page-1">
+                <div class="hero-content">
+                    <h1>Explore the World</h1>
+                    <h2>Your Next Adventure Awaits</h2>
+                    <p>Discover beautiful destinations across the globe.</p>
+                    <button class="btn">Book Trip Now!</button>
+                </div>
+
+            </section>
+            <section class="hidden-1 destinations">
+                <div class="hidden-page">
+                    <div class="destination-left">
+                        <ul>
+                            <li class="destination-item" data-img="src/h1.jpg">London</li>
+                            <li class="destination-item" data-img="src/h2.jpg">Turkey</li>
+                            <li class="destination-item" data-img="src/h3.jpg">Swizerland</li>
+                            <li class="destination-item" data-img="src/h4.1.jpg">Australia</li>
+                            <li class="destination-item" data-img="src/h5.jpg">Antarctica</li>
+                            <li class="destination-item" data-img="src/h6.jpg">china</li>
+                            <li class="destination-item" data-img="src/h7.jpg">Indonesia</li>
+                            <li class="destination-item" data-img="src/h8.jpg">America</li>
+                        </ul>
+                    </div>
+                    <div class="destination-right">
+                        <img id="destination-img" src="src/h1.jpg" alt="Destination Image">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section class="page-2 package-deals">
+        <div class="package-deal">
+            <h2>Special Package Deals</h2>
+            <div class="card-container">
+                <!-- Repeat this block for each card -->
+                <div class="card">
+                    <img src="src/pic1.jpg" alt="Travel Destination 1">
+                    <div class="card-content">
+                        <h3>Beautiful Bali</h3>
+                        <p>5 days, 4 nights stay at a luxury resort</p>
+                        <span class="price">$799</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/pic2.jpg" alt="Travel Destination 2">
+                    <div class="card-content">
+                        <h3>Paris Getaway</h3>
+                        <p>Explore the city of lights for 7 days</p>
+                        <span class="price">$999</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/pic8.jpg" alt="Travel Destination 3">
+                    <div class="card-content">
+                        <h3>Adventure in Alaska</h3>
+                        <p>10-day adventure tour</p>
+                        <span class="price">$1,199</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/pic3.webp" alt="Travel Destination 4">
+                    <div class="card-content">
+                        <h3>Hawaiian Paradise</h3>
+                        <p>7 days, 6 nights stay at a beachside resort</p>
+                        <span class="price">$1,499</span>
+                    </div>
+                </div>
+                <!-- Add four more cards -->
+                <div class="card">
+                    <img src="src/pic4.jpg" alt="Travel Destination 5">
+                    <div class="card-content">
+                        <h3>Discover Tokyo</h3>
+                        <p>5 days exploring Tokyo's top attractions</p>
+                        <span class="price">$1,299</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/pic5.jpg" alt="Travel Destination 6">
+                    <div class="card-content">
+                        <h3>Rome Explorer</h3>
+                        <p>4 days in the heart of Rome</p>
+                        <span class="price">$899</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/pic6.jpg" alt="Travel Destination 7">
+                    <div class="card-content">
+                        <h3>Swiss Alps Adventure</h3>
+                        <p>6 days, 5 nights skiing and hiking</p>
+                        <span class="price">$1,699</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/pic7.webp" alt="Travel Destination 8">
+                    <div class="card-content">
+                        <h3>Dubai Luxury</h3>
+                        <p>3 nights at a 5-star hotel</p>
+                        <span class="price">$1,099</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="page-3 get-visa">
+        <div class="getvisa-container">
+            <div class="div1">
+                <h2>Get Your Visa</h2>
+                <button class="btn">Apply Now</button>
+            </div>
+            <div class="div2">
+                <img src="src/v-pic.jpg" alt="family Picture">
+            </div>
+        </div>
+    </section>
+    <section class="page-4 ">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, call our hotline</p>
+            <button class="btn">Get In Touch</button>
+        </div>
+    </section>
+    <section class="page-5 inquiry-section">
+        <div class="know-more">
+            <h2>Know Before You Go</h2>
+            <div class="know-more-container">
+                <div class="know-more-card">
+                    <img src="src/kw.webp" alt="Visa Regulation pic">
+                    <div class="know-more-content">
+                        <h3>Visa Regulation</h3>
+                        <a href="google.com" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="know-more-card">
+                    <img src="src/kw-1.webp" alt="Visa Regulation pic">
+                    <div class="know-more-content">
+                        <h3>Travel Guide</h3>
+                        <a href="google.com" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="know-more-card">
+                    <img src="src/kw2.webp" alt="Visa Regulation pic">
+                    <div class="know-more-content">
+                        <h3>Getting Around</h3>
+                        <a href="google.com" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="know-more-card">
+                    <img src="src/kw3.webp" alt="Visa Regulation pic">
+                    <div class="know-more-content">
+                        <h3>About World</h3>
+                        <a href="google.com" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="page-6 slider-section">
+        <!-- Slideshow container -->
+        <h2>Discover Unforgettable Destinations</h2>
+        <div class="slideshow-container">
+           
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="src/c-1.jpg" style="width:100%">
+                <div class="text">Beautiful Mountains</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="src/c-2.webp" style="width:100%">
+                <div class="text">Middle East</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="src/c-3.jpg" style="width:100%">
+                <div class="text">Peru</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="src/c-4.jpg" style="width:100%">
+                <div class="text">Pretty Place</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="src/c-5.jpg" style="width:100%">
+                <div class="text">France</div>
+            </div>
+
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-overlay">
+            <div class="footer-sections">
+                <!-- About Us Section -->
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>Discover breathtaking destinations and plan your next adventure with us. Your journey starts here.</p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#plan-trip">Plan Your Trip</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 Travel Website. All Rights Reserved.</p>
+            </div>
+        </div>
+    
+        <div class="footer-video-background">
+            <video autoplay muted loop>
+                <source src="src/vid1.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
